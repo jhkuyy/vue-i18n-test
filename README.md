@@ -1,24 +1,7 @@
-# vue-i18n-test
+* use common plural rules: Intl.PluralRules
+* adapt ICU message formatting
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://github.com/intlify
+https://blog.intlify.dev/posts/vue-i18n-9.html
+https://vue-i18n.intlify.dev/guide/advanced/composition.html
+https://vue-i18n.intlify.dev/guide/essentials/pluralization.html#custom-pluralization

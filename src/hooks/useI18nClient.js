@@ -1,0 +1,1 @@
+export function useI18nClient(scope = 'global') {}
