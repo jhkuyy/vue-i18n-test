@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import { i18n } from '@/packages/i18n';
+import { i18n } from '@/packages';
 import App from './App.vue';
 
 createApp(App)

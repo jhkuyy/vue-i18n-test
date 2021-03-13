@@ -7,5 +7,9 @@ export function useI18nLocale() {
     locale.value = newLocale;
   }
 
-  return { t, locale, setLocale };
+  return {
+    t,
+    locale,
+    setLocale,
+  };
 }

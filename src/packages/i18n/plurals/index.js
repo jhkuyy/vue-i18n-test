@@ -1,0 +1,1 @@
+export { ruRU } from './ru';
