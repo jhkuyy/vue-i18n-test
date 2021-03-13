@@ -8,20 +8,22 @@
       :value="locale"
       @change="setLocale"
     />
+    <UserBadge />
   </div>
 </template>
 
 <script>
-import { useI18nLocale } from './hooks';
-import { SegmentedControl } from './components';
+import { useI18nLocale } from '@/hooks';
+import { SegmentedControl, UserBadge } from './components';
 
 export default {
   components: {
     SegmentedControl,
+    UserBadge,
   },
 
   setup() {
-    const [locale, setLocale] = useI18nLocale();
+    const { locale, setLocale } = useI18nLocale();
 
     return { locale, setLocale };
   },

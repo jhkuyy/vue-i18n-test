@@ -1,14 +1,11 @@
-import { shallowRef, readonly } from 'vue';
-
-// dynamically fetch locales
-// new Intl.Locale("en-US")
-
-const activeLocale = shallowRef('en-US');
-
-function setLocale(locale) {
-  activeLocale.value = locale;
-}
+import { useI18n } from 'vue-i18n';
 
 export function useI18nLocale() {
-  return [readonly(activeLocale), setLocale];
+  const { t, locale } = useI18n();
+
+  function setLocale(newLocale) {
+    locale.value = newLocale;
+  }
+
+  return { t, locale, setLocale };
 }
