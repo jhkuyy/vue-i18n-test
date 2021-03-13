@@ -1,1 +1,1 @@
-export { useI18nLocale } from "./useI18nLocale";
+export { useI18nLocale } from './useI18nLocale';

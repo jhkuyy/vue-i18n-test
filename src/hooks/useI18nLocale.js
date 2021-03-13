@@ -1,4 +1,4 @@
-import { shallowRef, readonly } from "vue";
+import { shallowRef, readonly } from 'vue';
 
 // dynamically fetch locales
 // new Intl.Locale("en-US")

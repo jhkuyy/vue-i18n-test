@@ -12,19 +12,19 @@
 </template>
 
 <script>
-import { useI18nLocale } from "./hooks";
-import { SegmentedControl } from "./components";
+import { useI18nLocale } from './hooks';
+import { SegmentedControl } from './components';
 
 export default {
   components: {
-    SegmentedControl
+    SegmentedControl,
   },
 
   setup() {
     const [locale, setLocale] = useI18nLocale();
 
     return { locale, setLocale };
-  }
+  },
 };
 </script>
 

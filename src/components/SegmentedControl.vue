@@ -19,8 +19,8 @@ export default {
   props: {
     // {name, value}
     items: Array,
-    value: String
-  }
+    value: String,
+  },
 };
 </script>
 
