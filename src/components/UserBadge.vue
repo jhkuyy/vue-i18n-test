@@ -14,6 +14,7 @@
       | {{ t('pluralization2', 1) }}
       | {{ t('pluralization2', 2) }}
       | {{ t('pluralization2', 100) }}
+      | {{ t('global') }}
     </p>
   </div>
 </template>
@@ -30,14 +31,15 @@ export default {
 };
 </script>
 
+<i18n src="../packages/i18n/locales/global.json" />
 <i18n>
 {
-  "en-US": {
+  "en": {
     "greeting": "Hello, {name}!",
     "pluralization1": "Pie | Pies",
     "pluralization2": "{n} Pie | {n} Pies"
   },
-  "ru-RU": {
+  "ru": {
     "greeting": "Привет, {name}!",
     "pluralization1": "Пирог | Пирога | Пирогов",
     "pluralization2": "{n} Пирог | {n} Пирога | {n} Пирогов"
